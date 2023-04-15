@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --fontHeading:'Rubik Moonrocks', cursive;
+}
+
+
+/* Name page */
+.body-name{
+    background: url("./images/backgroun1.png");
+    background-size:cover;
+}
+
+h1 {
+    font-size: 8rem;
+    font-family: 'Rubik Moonrocks', cursive;
+    color: #f90c0c;
+  }
+  .name-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #name {
+    width: 50%;
+    height: 24px;
+    border-radius: 70px 0;
+    padding: 3%;
+    font-size: x-large;
+    font-family: 'Rubik Moonrocks', cursive;
+    color: rgb(111, 0, 255);
+    outline: none;
+  }
+  .playBtn {
+    width: 381px;
+    margin: 2%;
+    border-radius: 70px 0;
+    background: url("./images/playButton.png");
+      background-size: auto;
+    background-size: auto;
+    background-size: contain;
+    color: #f20404;
+    font-family: 'Rubik Moonrocks', cursive;
+    font-size: xxx-large;
+  }
+  .playBtn:hover {
+    transform: scale(1.1,1.1);
+    transition: linear .3s;
+  }
+
+
+  /* ================================
+
+        Game Page Css
+
+  ==================================== */
+  .body-game{
+    background: linear-gradient(to right, #14003C, #51118C);
+  }
+  .coin {
+    display: flex;
+    width: 50%;
+  }
+  .coin-img{
+    width: 100%;
+    transition: .3s linear;
+  }
+  h2{
+    font-size: 2rem;
+    font-family: 'Rubik Moonrocks', cursive;
+    color: #f90c0c;
+  }
+
+  .div.choose-toss {
+    display: flex;
+    justify-content: space-around;
+  }
+
+
+  .toss {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .coin-img:hover {
+    transform: scale(1.1,1.1);
+    
+  }
+  #result-img {
+    display: none;
+    transition: .3s linear;
+    transform:rotateX(360deg);
+  }
+  .result-img {
+    width: 200px;
+    height: 200px;
+  }
+  #winner-point{
+   
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+      color: #fff;
+      text-align: center;
+      -webkit-animation: glow 1s ease-in-out infinite alternate;
+      -moz-animation: glow 1s ease-in-out infinite alternate;
+      animation: glow 1s ease-in-out infinite alternate;
+    
+  }
+
+
+
+  #winner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    color: #fff;
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+
+  @-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+  }
+
+
+  /* mobile */
+@media only screen and (max-width:600px) {
+  h1 {
+    font-size: 2rem;
+    font-family: 'Rubik Moonrocks', cursive;
+    color: #f90c0c;
+  }
+  
+  #name {
+    font-size: large;
+    padding: 10%;
+    width: 100%;
+  }
+  .playBtn {
+    width: 261px;
+    font-size: xx-large;
+  }
+  .container.mt-3 {
+    margin: 50% 0 0 0 !important;
+  }  
+
+
+
+  /*close  */
+}
+
+
